@@ -23,7 +23,8 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\documentclass[12pt]{friggen-awesome-cv}
+
+\documentclass[sidebar]{friggen-awesome-cv}
 % Add `a4paper` to set a4 paper size
 % Add `nocolors` to remove colors from the document
 % Add `sidebar` to enable a sidebar section on the left
@@ -34,20 +35,21 @@
 %-------------------------------------------------------------------------------
 %   PERSONAL INFORMATION
 %-------------------------------------------------------------------------------
-\input{sections/personal.tex}
+
 
 \begin{document}
 
-\header{Jo\~{a}o}{Moreira}% Your name
+\header{John}{Warren}% Your name
+\input{sections/personal.tex}
 
 %-------------------------------------------------------------------------------
 %	SIDEBAR SECTION
 %-------------------------------------------------------------------------------
 % If `sidebar` is added in the documentclass definition above, uncomment these
 % lines to allow a sidebar on the left. See template section
-%\begin{aside}
-%\input{sections/skills_aside}
-%\end{aside}
+\begin{aside}
+\input{sections/skills_aside}
+\end{aside}
 % %
 % % Leave the percent signs to avoid creating a paragraph between minipages
 %
@@ -55,9 +57,8 @@
 %   MAIN SECTION
 %-------------------------------------------------------------------------------
 \begin{main}
-\input{sections/education}
-\input{sections/skills}
 \input{sections/experience}
+\input{sections/education}
 \end{main}
 
 \end{document}
